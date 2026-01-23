@@ -1,0 +1,604 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f0ec;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar a:hover {
+    color: #CC5500;
+    text-decoration: underline;
+}
+
+.navbar li {
+    display: inline;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.navbar li.logo {
+    border-right: 2px solid black;
+    font-weight: bold;
+}
+
+.navbar button {
+    border: none;
+    background-color: #f4f0ec;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar button:hover {
+    color: #CC5500;
+    text-decoration: underline;
+}
+
+
+
+.main-page {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 200px;
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height: 1.6; 
+}
+
+
+.main-page a {
+    color: #CC5500;
+    text-decoration: none;
+}
+.main-page a:hover {
+    text-decoration: underline;
+}
+
+.name {
+    font-size: 75px;
+    font-weight: bold;
+}
+
+.name {
+    font-size: 75px;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid black;
+    animation:
+        typing 3.5s steps(45, end),
+        blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { max-width: 0 }
+    to { max-width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+
+.three-text-section {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 180px;
+    padding-right: 180px;
+}
+
+
+.three-text-left {
+    flex: 1; 
+    max-width: 50%;
+}
+
+.three-text-right {
+    flex: 1; 
+    max-width: 50%;
+}
+
+.three-text-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: black;
+}
+.three-text-main-text {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.4;
+    color: black;
+}
+
+.three-text-right-text {
+    font-size: 18px; 
+    line-height: 1.6; 
+    color: black;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 40px;
+    padding-top: 60px;
+}
+
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: black;
+    color: #f4f0ec; 
+    padding-left: 300px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer_links {
+    margin: 0;
+    font-size: 18px; 
+}
+
+.footer_links a {
+    text-decoration: none; 
+    color: #f4f0ec; 
+}
+
+.footer_links a:hover {
+    text-decoration: underline;
+    color: #CC5500;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.why-cs-section {
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 180px;
+    padding-right: 180px;
+}
+
+
+.cs-left {
+    flex: 1; 
+    max-width: 50%;
+}
+
+.cs-resume {
+    flex: 1; 
+    max-width: 50%;
+}
+
+.cs-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+
+}
+.cs-resume-title {
+    text-align: right;
+    font-size: 30px;
+    margin-bottom: 20px;
+
+}
+.cs-main-text {
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 1.4;
+    color: black;
+    padding-top: 50px;
+}
+
+.cs-left-text {
+    font-size: 18px; 
+    line-height: 1.6; 
+    color: black;
+    margin-bottom: 20px;
+    padding-right: 60px;
+    padding-top: 30px;
+}
+
+
+
+
+
+.table-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.table-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-weight: 600;
+}
+
+.table-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.table-content {
+    width: 22%;
+    margin-bottom: 40px; 
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-content h3 {
+    font-size: 28px;
+    margin-bottom: 22.5px;
+    margin-top: 22.5px;
+    padding-bottom: 22.5px;
+    border-bottom: 2px solid black;
+    font-weight: 700;
+}
+
+.table-content h3 a {
+    text-decoration: none;
+    color: black;
+}
+.table-content h3 a:hover {
+    text-decoration: underline;
+    color: #CC5500;
+
+}
+
+
+
+
+
+
+.two-title-section {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    padding-top: 140px; 
+    padding-bottom: 140px;
+    padding-left: 200px;
+    padding-right: 200px;
+    border-bottom: black 2px solid;
+}
+
+.two-left-title {
+    flex: 1; 
+    max-width: 50%;
+    text-align: left;
+}
+
+.two-right-title {
+    flex: 1; 
+    max-width: 50%; 
+    text-align: left;
+}
+
+.two-left-title h2 {
+    font-size: 51px; 
+    font-weight: 650;
+    line-height: 1.4;
+    margin: 0;
+
+}
+
+.two-right-title p {
+    font-size: 21px;
+    line-height: 1.6;
+    margin: 0;
+    padding-left: 50px;
+}
+
+
+
+
+.project1-section { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 220px;
+    padding-right: 220px;
+    gap: 40px;
+    border-bottom: black 2px solid;
+}
+.project1-image {
+    flex: 1;
+}
+.image1 {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.project1-details {
+    flex: 1;
+    max-width: 50%;
+}
+
+.project1-details h3 {
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.project1-details h2 {
+    font-size: 50px;
+    font-weight: 650;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.project1-details p {
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.project1-details .learn-more {
+    font-size: 22px;
+    font-weight: 650;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    padding-bottom: 2px;
+}
+
+.project1-details .learn-more:hover {
+    text-decoration: none; 
+    color: #CC5500;
+}
+
+
+
+
+
+
+
+.project2-section {
+    background: url('../images/fsae.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 110px;
+    padding-right: 260px;
+    height: calc(100vh - 80px);
+    box-sizing: border-box;
+    border-bottom: black 2px solid;
+}
+
+.project2-details {
+    flex: 1;
+    max-width: 50%;
+}
+
+.project2-details h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.project2-details h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.project2-details p {
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #f4f0ec;
+
+}
+
+.project2-details .learn-more {
+    font-size: 22px;
+    font-weight: 650;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    padding-bottom: 2px;
+}
+
+.project2-details .learn-more:hover {
+    text-decoration: none; 
+    color: #CC5500;
+}
+
+
+
+
+
+
+.project3-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 220px;
+    padding-right: 220px;
+    gap: 40px;
+    border-bottom: black 2px solid;
+}
+.project3-video {
+    flex: 1;
+}
+.video1 {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.project3-details {
+    flex: 1;
+    max-width: 50%;
+}
+
+.project3-details h3 {
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.project3-details h2 {
+    font-size: 50px;
+    font-weight: 650;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.project3-details p {
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.project3-details .learn-more {
+    font-size: 22px;
+    font-weight: 650;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    padding-bottom: 2px;
+}
+
+.project3-details .learn-more:hover {
+    text-decoration: none; 
+    color: #CC5500;
+}
+
+
+
+.project4-section {
+    background: url('../images/tesseract.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 110px;
+    padding-right: 550px;
+    height: calc(100vh - 80px);
+    box-sizing: border-box;
+    border-bottom: black 2px solid;
+}
+
+.project4-details {
+    flex: 1;
+    max-width: 50%;
+}
+
+.project4-details h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #f4f0ec;
+}
+
+.project4-details h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    line-height: 1.4;
+    color: #f4f0ec;
+}
+
+.project4-details p {
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #f4f0ec;
+
+}
+
+.project4-details .learn-more {
+    font-size: 22px;
+    font-weight: 650;
+    text-decoration: none;
+    color: #f4f0ec;
+    border-bottom: 1px solid #f4f0ec;
+    padding-bottom: 2px;
+}
+
+.project4-details .learn-more:hover {
+    text-decoration: none; 
+    color: #CC5500;
+}
+
+
+
+
+.project4-image {
+    display: none;
+}
+
+.project2-image {
+    display: none;
+}

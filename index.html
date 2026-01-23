@@ -1,113 +1,98 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
     <head>
-        <!-- Character set definition to use UTF-8 encoding (supports most languages) -->
-        <meta charset="UTF-8" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bari Vadaria's Personal Website</title>
 
-        <!-- Ensures compatibility with IE's latest rendering engine -->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
-        <!-- Responsive design: scales the website to match device screen size -->
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        <!-- Meta tags for SEO -->
-        <meta name="description" content="Personal website of Bari Vadaria" />
-        <meta name="author" content="Bari Vadaria" />
-
-        <!-- Open Graph metadata for social media sharing -->
-        <meta property="og:title" content="barivadaria.github.io" />
-        <meta property="og:locale" content="en_US" />
-        <link rel="canonical" href="https://barivadaria.github.io/" />
-        <meta property="og:url" content="https://barivadaria.github.io/" />
-        <meta property="og:site_name" content="barivadaria.github.io" />
-        <meta property="og:type" content="website" />
-
-        <!-- Structured data for SEO using JSON-LD -->
-        <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@type": "Website",
-                "headline": "Bari Vadaria",
-                "name": "Bari Vadaria",
-                "url": "https://barivadaria.github.io/"
-            }
-        </script>
-
-        <!-- Link to external CSS for styling -->
-        <link rel="stylesheet" href="css/styles.css" />
-
-        <!-- Google Fonts import for custom fonts (Exo, Inter, Outfit) -->
-        <style>
-            @import url("https://fonts.googleapis.com/css2?family=Exo:wght@600;700&family=Inter:wght@100..900&family=Outfit:wght@300&display=swap");
-        </style>
-
-        <!-- Including index.js and post.js for updates -->
-        <script src="index.js" defer></script>
-        <script src="post.js" defer></script>
-
-        <title>Bari Vadaria</title>
-
+        <link id="mainStyleSheet" rel="stylesheet" href="css/style.css">
     </head>
 
+    <header>
+        <nav class = "navbar">
+            <ul>
+                <li class="logo"><a href="index.html">BV</a></li>
+                <li><a href="portfolio.html">Technical +</a></li>
+                <li><a href="qualifications.html">Qualifications +</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <body>
-        <!-- Main heading -->
-        <h1 style="text-align: center">Hi, I'm Bari.</h1>
+        <script src="functions.js"></script>
 
-        <!-- Subheading with a resume -->
-        <h3 style="text-align: center">
-            junior honors engineering & cs (ai/ml focus) @ tamu, first internship @ 18, technical founder @ 19, 1x hackathon top 3 finisher, cybersecurity @ cisco, palo alto & aws academies. here's my
-            <a href="https://drive.google.com/file/d/1-ST8FEg7xHduezhdoN99tQifia4ETSHO/view?usp=sharing" target="_blank">resume</a>. 
-        </h3>
 
-        <!-- First description -->
-        <p style="text-align: center">
-            building things since 2024. thank
-            <a href="https://www.youtube.com/watch?v=lB95KLmpLR4"  target="_blank">The Social Network</a> 
-            for that.
-        </p>
+        <div class="main-page">
+            <h1 class ="name">Hi, I'm Bari Vadaria</h1>
+            <h3>
+                Seinor Honors Engineering & CS @ TAMU, First Internship @ 18, Technical Founder @ 19, Hackathon Top 3 Finisher, Cybersecurity @ Cisco, Palo Alto & AWS Academies. Here's My
+                <a href="https://drive.google.com/file/d/184jfeM9jot44jgAgtCbxVpdPhJdvQj3b/view?usp=sharing" target="_blank">Resume</a>. 
+            </h3>
+            <p>
+                Building things since 2024. thank
+                <a href="https://www.youtube.com/watch?v=lB95KLmpLR4"  target="_blank">The Social Network</a> 
+                for that.
+            </p>
+            <p>
+                These days, I'm building a full-stack next-generation
+                <a href="https://www.linkedin.com/company/soule/"  target="_blank">dating app</a>
+                designed to foster meaningful, long-term relationships.
+            </p>
+            <p>
+                Founded the
+                <a href="https://tamuformulaelectric.com"  target="_blank">Texas A&M Formula SAE Electric Racing Team</a>.
+            </p>
+            <p>
+                Previously a Software Engineering Intern at 
+                <a href="https://www.lockheedmartin.com" target="_blank">Lockheed Martin</a>, 
+                worked on <span class="redacted" data-text="classified">classified</span>.
+            </p>
+            <p>
+                Incoming Cybersecurity Consultant at 
+                <a href="https://www.accenture.com/us-en" target="_blank">Accenture</a>.
+            </p>
+            <style>
+                .redacted {
+                background: black;
+                color: black;       
+                padding: 0 5px;     
+                border-radius: 2px;  
+                }
+                .redacted::selection {
+                color: black;
+                background: black;   
+                }
+            </style>
 
-        <!-- Next-gen dating app description with link -->
-        <p style="text-align: center">
-            these days, i'm building a full-stack next-gen
-            <a href="https://www.linkedin.com/company/soule/"  target="_blank">dating app</a>
-            designed to foster meaningful, long-term relationships.
-        </p>
+            
+        </div>
 
-        <!-- Info about your current role at Texas A&M Formula Electric Racing -->
-        <p style="text-align: center">
-            currently a software engineer on the 
-            <a href="https://tamuformulaelectric.com"  target="_blank">Texas A&M Formula SAE Electric Racing Team</a>, working on an embedded telemetry system.
-        </p>
+        <section class="three-text-section">
+            <div class="three-text-left">
+                <p class="three-text-title">My Goal</p>
+                <p class="three-text-main-text">
+                    Is to connect a bridge between ideas and reality.
+                </p>
+            </div>
+            <div class="three-text-right">
+                <p class="three-text-right-text">
+                    As a 22-year-old software engineer, entrepreneur, and visionary, I'm extremely passionate about the intersection of technology and innovation, and I love working on projects that have a meaningful impact on people's lives. When I'm not coding, you can find me exploring new tech trends, working on my numerous hobbies, or working on my next big idea. Recently, I’ve been diving deep into cybersecurity and AI, exploring these areas to broaden my skill-set and fuel my passions.
+                </p>
+            </div>
+        </section>
+        
+    </body>
 
-        <!-- Section for posts -->
-        <h3 style="margin-top: 2rem; margin-bottom: 0rem;">Posts</h3>
-        <ul id="posts-list">
-            <!-- Posts will be dynamically loaded here  -->
-        </ul>
-
-        <!-- Side project section with AI fraud detection model link -->
-        <h2 style="padding-top: 40px">some projects of mine (more to come)</h2>
-        <ul>
-            <li>
-                <a href="https://github.com/RithvikBona/Vehicular-Insurance-Fraud-Detection-Project" target="_blank">
-                    ai fraud detection model
-                </a>
-            </li>
-        </ul>
-
-        <!-- Footer section -->
-        <p style="padding-top: 50px; text-align: center;">
-            in progress
-            <img  class ="loading-gif"src="img/loading.gif" style="vertical-align: middle; padding-left: 10px;">
-          </p>
-
-        <!-- Contact section with links to email and social media -->
-        <p style="text-align: center">
+    <footer>
+        <p class="footer_links">
             <a href="mailto:bari.vadaria@gmail.com">email</a> | 
             <a href="https://www.instagram.com/barivadaria/" target="_blank">instagram</a> | 
             <a href="https://www.linkedin.com/in/abdulbari-vadaria/" target="_blank">linkedin</a> | 
             <a href="https://github.com/barivadaria" target="_blank">github</a>
         </p>
-
-    </body>
+    </footer>
 </html>
